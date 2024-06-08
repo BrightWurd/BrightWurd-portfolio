@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #bbebfe;
+  border-radius: 0 0 30px 30px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+img {
+  width: 80%;
+  border-radius: 20px;
+}
+
+.the-text-holder {
+  align-content: center;
+  justify-content: center;
+}
+
+.sacramento-regular {
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-style: bold;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.little-font-with-border-style {
+  font-size: 1.1rem;
+  background-color: #a7e6ff;
+  border-radius: 8px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.feature-icon-small {
+  width: 3rem;
+  height: 3rem;
+}
+
+.sector-two {
+  background-color: #bbebfe;
+  border-radius: 40px 40px 40px 40px;
+}
+
+.end {
+  background-color: #bbebfe;
+  color: black;
+  border-radius: 40px 40px 0 0;
+}
+
+.v {
+  border-bottom: 2px solid rgb(114, 114, 114);
+}
+
+/* the about me page styling  */
+
+.some-content-holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.the-about-me-container p {
+  max-width: 445px;
+  font-size: 1.1rem;
+  background-color: #bbebfe;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 8px;
+}
+
+.ibm-plex-serif-thin {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.the-about-me-container ul {
+  list-style: none;
+  max-width: 445px;
+  font-size: 1.1rem;
+  background-color: #bbebfe;
+  border-radius: 8px;
+}
+
+span {
+  font-weight: 600;
+}
+
+/* the design and project page */
+
+.the-photos-and-designs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.the-photos-and-designs ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.the-photos-and-designs ul li img {
+  width: 200px;
+  background-size: cover;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.281);
+  transition: width 0.5s;
+}
+
+.the-photos-and-designs ul li {
+  display: inline-block;
+  gap: 10px;
+  border-radius: 25px;
+}
+
+.the-photos-and-designs ul li img:hover {
+  width: 260px;
+  box-shadow: 0px 0px 4px 3px rgba(0, 255, 242, 0.829);
+  cursor: pointer;
+}
+
+.last-main section {
+  text-align: center;
+}
+
+.last-main section .the-contact-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.the-contact-information form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.the-contact-information form input {
+  width: 80%;
+  min-height: 40px;
+  padding-left: 5px;
+  outline: none;
+  border: 2px solid #bbebfe;
+  border-radius: 7px;
+  word-wrap: wrap;
+}
+
+.the-contact-information form textarea {
+  width: 80%;
+  min-height: 200px;
+  padding-left: 5px;
+  outline: none;
+  border: 2px solid #bbebfe;
+  border-radius: 7px;
+  word-wrap: wrap;
+}
+
+.the-contact-information form button {
+  width: 100px;
+  margin: auto;
+  border-radius: 10px;
+  border: 2px solid rgb(168, 165, 165);
+  background-color: #bbebfe;
+  padding: 2px 0 2px 0;
+}
+
+.the-contact-information form button:hover {
+  border: 3px solid #bbebfe;
+  background-color: rgb(184, 121, 121);
+  color: white;
+  box-shadow: 0px 0px 10px 10px #bbebfe;
+  border-radius: 10px;
+}
+
+.feature-icon-small {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.bi {
+  vertical-align: -0.125em;
+  height: 2rem;
+}
+
+.ibt {
+  width: 2rem;
+}
+
+@media only screen and (max-width: 860px) {
+  .header {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
+
+  .intro-page {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .little-font-with-border-style-junior {
+    font-size: 0.9em;
+  }
+
+  .some-content-holder {
+    grid-template-columns: 1fr;
+  }
+
+  .the-photos-and-designs {
+    padding-right: 10%;
+  }
+
+  .the-photos-and-designs ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .last-main section .the-contact-box {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .the-photos-and-designs ul {
+    gap: 20px;
+  }
+
+  .the-photos-and-designs ul li img {
+    width: 160px;
+    background-size: cover;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.281);
+    transition: width 0.5s;
+  }
+
+  .the-photos-and-designs ul li img:hover {
+    width: 200px;
+    box-shadow: 0px 0px 4px 3px rgba(0, 255, 242, 0.829);
+    cursor: pointer;
+  }
+}
